@@ -14,9 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var lifePlayer4: UILabel!
     @IBOutlet weak var loser: UILabel!
     
+    var clicked: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    @IBAction func addPlayer(_ sender: Any) {
+        
     }
     
     func changeValue(_ val: Int,_ target: Int) {
@@ -87,7 +92,8 @@ class ViewController: UIViewController {
         changeValue(1, 2)
     }
     
-    @IBAction func pos5Player2(_ sender: Any) {        changeValue(5, 2)
+    @IBAction func pos5Player2(_ sender: Any) {
+        changeValue(5, 2)
     }
     
     @IBAction func neg5Player3(_ sender: Any) {

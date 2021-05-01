@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifeCounterUpdated" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-9d-voc">
+                                <rect key="frame" x="20" y="91" width="417" height="771"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="vAT-cm-784">
+                                <rect key="frame" x="1" y="49" width="206" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Number of Users"/>
+                                <connections>
+                                    <action selector="addPerson:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1E-V8-rIi"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D26-QP-mhU">
+                                <rect key="frame" x="204" y="54" width="181" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="leading" secondItem="QAD-9d-voc" secondAttribute="leading" id="2Lt-gj-ufk"/>
+                            <constraint firstItem="D26-QP-mhU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="204" id="5XL-c8-CWq"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="top" secondItem="D26-QP-mhU" secondAttribute="bottom" constant="3" id="8tB-Rz-tbg"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="top" secondItem="vAT-cm-784" secondAttribute="bottom" constant="8" id="Kkb-Cx-LIy"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="91" id="U5s-9d-HHr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D26-QP-mhU" secondAttribute="trailing" constant="29" id="bTM-zM-f5X"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ewl-DK-CBt"/>
+                            <constraint firstItem="QAD-9d-voc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gYb-pF-wb6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QAD-9d-voc" secondAttribute="trailing" constant="-43" id="qNO-dD-xFg"/>
+                            <constraint firstItem="vAT-cm-784" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tbB-ub-FFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="QAD-9d-voc" id="Xvl-IO-spy"/>
+                        <outlet property="numPlayerStart" destination="D26-QP-mhU" id="Pdx-qu-NZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
